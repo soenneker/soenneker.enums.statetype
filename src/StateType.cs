@@ -60,7 +60,7 @@ public class StateType : AbbreviatedDescriptiveSmartEnum<StateType>
     public static readonly StateType Wisconsin = new(nameof(Wisconsin), 50, "WI");
     public static readonly StateType Wyoming = new(nameof(Wyoming), 51, "WY");
 
-    public StateType(string name, int value, string abbreviation, string? description = null) : base(name, value, abbreviation, description)
+    public StateType(string name, int value, string abbreviation, string? description = null) : base(name, value, abbreviation, description, true)
     {
     }
 }
