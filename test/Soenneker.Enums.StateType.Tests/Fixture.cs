@@ -8,7 +8,7 @@ namespace Soenneker.Enums.StateType.Tests;
 
 public class Fixture : UnitFixture
 {
-    public override System.Threading.Tasks.Task InitializeAsync()
+    public override System.Threading.Tasks.ValueTask InitializeAsync()
     {
         SetupIoC(Services);
 
