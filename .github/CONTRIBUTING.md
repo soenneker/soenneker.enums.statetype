@@ -1,4 +1,4 @@
-# Contributing to Soenneker.Enums.StateType
+﻿# Contributing to Soenneker.Enums.StateType
 
 We're excited that you're interested in contributing!
 
