@@ -4,13 +4,13 @@
   </Folder>
   <Folder Name="/.github/workflows/">
     <File Path=".github/workflows/build-and-test.yml" />
+    <File Path=".github/workflows/codeql.yml" />
     <File Path=".github/workflows/publish-package.yml" />
   </Folder>
   <Folder Name="/src/">
-    <Project Path="src/Soenneker.Enums.StateType.csproj" />
+    <Project Path="src/Soenneker.Enums.StateType/Soenneker.Enums.StateType.csproj" />
   </Folder>
   <Folder Name="/test/">
-    <File Path="src/StateType.cs" />
     <Project Path="test/Soenneker.Enums.StateType.Tests/Soenneker.Enums.StateType.Tests.csproj" />
   </Folder>
 </Solution>
