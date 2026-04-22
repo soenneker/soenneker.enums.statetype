@@ -1,16 +1,15 @@
-using Soenneker.Tests.FixturedUnit;
-using Xunit;
+using Soenneker.Tests.HostedUnit;
 
 namespace Soenneker.Enums.StateType.Tests;
 
-[Collection("Collection")]
-public class StateTypeTests : FixturedUnitTest
+[ClassDataSource<Host>(Shared = SharedType.PerTestSession)]
+public class StateTypeTests : HostedUnitTest
 {
-    public StateTypeTests(Fixture fixture, ITestOutputHelper output) : base(fixture, output)
+    public StateTypeTests(Host host) : base(host)
     {
     }
 
-    [Fact]
+    [Test]
     public void Default()
     {
 
