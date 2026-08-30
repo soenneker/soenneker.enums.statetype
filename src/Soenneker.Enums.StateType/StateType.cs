@@ -3,9 +3,9 @@ using Soenneker.SmartEnum.AbbreviatedDescriptive;
 namespace Soenneker.Enums.StateType;
 
 /// <summary>
-/// An enumeration for US States
+/// Represents U.S. states, the District of Columbia, and Puerto Rico with postal abbreviations and display names.
 /// </summary>
-public class StateType : AbbreviatedDescriptiveSmartEnum<StateType>
+public sealed class StateType : AbbreviatedDescriptiveSmartEnum<StateType>
 {
     /// <summary>
     /// The alabama.
@@ -42,7 +42,7 @@ public class StateType : AbbreviatedDescriptiveSmartEnum<StateType>
     /// <summary>
     /// The district of columbia.
     /// </summary>
-    public static readonly StateType DistrictOfColumbia = new(nameof(DistrictOfColumbia), 8, "DC", "District of Columbia");
+    public static readonly StateType DistrictOfColumbia = new(nameof(DistrictOfColumbia), 52, "DC", "District of Columbia");
     /// <summary>
     /// The florida.
     /// </summary>
@@ -216,7 +216,7 @@ public class StateType : AbbreviatedDescriptiveSmartEnum<StateType>
     /// </summary>
     public static readonly StateType Wyoming = new(nameof(Wyoming), 51, "WY");
 
-    public StateType(string name, int value, string abbreviation, string? description = null) : base(name, value, abbreviation, description, true)
+    private StateType(string name, int value, string abbreviation, string? description = null) : base(name, value, abbreviation, description, true)
     {
     }
 }
