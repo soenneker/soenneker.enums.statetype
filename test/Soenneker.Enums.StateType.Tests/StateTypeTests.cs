@@ -12,7 +12,7 @@ public class StateTypeTests : HostedUnitTest
     }
 
     [Test]
-    public async Task Values_are_unique_and_abbreviations_are_case_insensitive()
+    public async ValueTask Values_are_unique_and_abbreviations_are_case_insensitive()
     {
         int distinctValues = StateType.List.Select(state => state.Value).Distinct().Count();
 
