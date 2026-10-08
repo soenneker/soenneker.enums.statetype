@@ -1,6 +1,7 @@
 using Soenneker.Tests.HostedUnit;
 using System.Linq;
 using System.Threading.Tasks;
+using System.Threading;
 
 namespace Soenneker.Enums.StateType.Tests;
 
@@ -12,7 +13,7 @@ public class StateTypeTests : HostedUnitTest
     }
 
     [Test]
-    public async ValueTask Values_are_unique_and_abbreviations_are_case_insensitive()
+    public async ValueTask Values_are_unique_and_abbreviations_are_case_insensitive(CancellationToken cancellationToken)
     {
         int distinctValues = StateType.List.Select(state => state.Value).Distinct().Count();
 
